@@ -1,4 +1,3 @@
-
 public class Sus {
 
 	public String sistema;
@@ -22,7 +21,6 @@ public class Sus {
 	public void setSistema(String sistema) {
 		this.sistema = sistema;
 	}
-
 	public String getUsuario() {
 		return usuario;
 	}
@@ -48,10 +46,10 @@ public class Sus {
 
 		if (this.scoresus < 68) {
 
-			this.nivel = "Você avaliou o sistema como abaixo da Média de usabiidade!";
+			this.nivel = "VocÃª avaliou o sistema como abaixo da MÃ©dia de usabiidade!";
 		} else {
 
-			this.nivel = "Você avaliou o sistema como acima da Média de usabiidade!";
+			this.nivel = "VocÃª avaliou o sistema como acima da MÃ©dia de usabiidade!";
 		}
 
 	}
