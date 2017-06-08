@@ -18,20 +18,23 @@
 
 </head>
 <body>
-<jsp:useBean id="sus" scope="request" class="Sus"/>
+
 
 <table class="table table-condensed" border="1">
 <tr>
 <th> Sistema</th> <th> Usuário</th> <th> Email</th> <th> Escore SUS</th>
 </tr>
 <tr>
-<td> ${sus.sistema}</td>  <td> ${sus.usuario}</td> <td> ${sus.email}</td> <td> ${sus.scoresus}</td> 
+<td> ${param.sistema}</td>  
+<td> ${param.usuario}</td> 
+<td> ${param.email}</td> 
+<td> ${param.scoresus}</td> 
 </tr>
 </table> <br><br>
 
 <div class="progress">
-  <div class="progress-bar" role="progressbar" aria-valuenow="${sus.scoresus}"
-  aria-valuemin="0" aria-valuemax="100" style="width:${sus.scoresus}%"> ${sus.scoresus}
+  <div class="progress-bar" role="progressbar" aria-valuenow="${param.scoresus}"
+  aria-valuemin="0" aria-valuemax="100" style="width:${param.scoresus}%"> ${param.scoresus}
   </div>
 </div>
 
