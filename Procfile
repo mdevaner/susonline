@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/dependency/jetty-runner.jar --port $PORT target/*.war
+Web: java $ JAVA_OPTS -Dserver.port = $ PORT -jar target / gs-maven - *. Jar
